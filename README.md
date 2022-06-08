@@ -7,6 +7,10 @@
 ## 목차
 ### jQuery 개요 및 개발환경 구축
 1. [\[jQuery\] jQuery 개발환경 준비](https://yonghwankim-dev.tistory.com/423)
+2. [\[jQuery\] jQuery 함수와 Ready](https://yonghwankim-dev.tistory.com/424)
+3. [\[jQuery\] 기본 선택자(basic selector)](https://yonghwankim-dev.tistory.com/425)
+4. [\[jQuery\] 기본 선택자(basic selector) 조합](https://yonghwankim-dev.tistory.com/426)
+
 
 ## Reference
 [윤재성의 처음 시작하는 jQuery Programming](https://www.inflearn.com/course/jquery-programming/dashboard)
