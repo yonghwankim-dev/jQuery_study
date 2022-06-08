@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery 실습</title>
+<script>
+    // window.onload가 여러개 있는 경우 제일 마지막 onload 것이 수행됨
+	window.onload = function(){
+        const result = document.getElementById("result");
+        result.innerHTML += "on load1<br/>";
+    }
+    window.onload = function(){
+        const result = document.getElementById("result");
+        result.innerHTML += "on load2<br/>";
+    }
+    window.onload = function(){
+        const result = document.getElementById("result");
+        result.innerHTML += "on load3<br/>";
+    }
+</script>
+
+</head>
+<body>
+    <div id="result"></div>
+</body>
+</html>

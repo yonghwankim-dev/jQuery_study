@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery 실습</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    // ready 함수를 이용해서 익명함수들 모두 적용됨 (위에서 아래로)
+    $(document).ready(function(){
+        $("#result").append("ready1 <br/>");
+    });
+    $(document).ready(function(){
+        $("#result").append("ready2 <br/>");
+    });
+
+    // $(document).ready(function(){})와 동일한 표현
+    $(function(){
+        $("#result").append("ready3 <br/>");
+    })
+</script>
+</head>
+<body>
+    <div id="result"></div>
+</body>
+</html>
