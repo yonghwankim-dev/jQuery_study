@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery 실습</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(function(){
+        // 전체 선택자(*)
+        // 모든 객체의 배경을 노란색으로 설정
+        $("*").css("background-color","yellow");
+
+        // 태그 이름 선택자(태그이름)
+        // $("p") 호출시 배열이 반환되고 css 적용시
+        // 배열안에 모든 요소들에게 css 적용함
+        $("p").css("background-color", "blue");
+        $("div").css("background-color", "green");
+
+        // 아이디 선택자(#아이디)
+        // id속성은 두개 이상 존재할 수 없음
+        $("#test1").css("color", "white");
+        $("#test2").css("color", "red");
+
+        // 클래스 선택자(.클래스)
+        // $(".test3") 호출시 배열 형태로 반환
+        $(".test3").css("color", "orange");
+    });
+</script>
+</head>
+<body>
+    <p>문자열1</p>
+    <p>문자열2</p>
+    <div>문자열3</div>
+    <div>문자열4</div>
+    <div id="test1">문자열5</div>
+    <div id="test2">문자열6</div>
+    <div class="test3">문자열7</div>
+    <div class="test3">문자열8</div>
+</body>
+</html>
