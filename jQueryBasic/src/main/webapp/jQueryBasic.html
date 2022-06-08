@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery 맛보기</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>h1 태그입니다.</h1>
+    <button onclick="set_h1()">h1태그 문자열 변경</button>
+    <br>
+
+    <ul>
+        <li>문자열1</li>
+        <li>문자열2</li>
+        <li>문자열3</li>
+    </ul>
+    <button onclick="get_li()">li 태그 문자열 가져오기</button>
+    <div id="result"></div>
+
+    <script>
+        function set_h1(){
+        	/*
+            const h1 = document.getElementsByTagName("h1");
+            const str = h1[0].firstChild;
+
+            str.nodeValue = "JavaScript로 문자열 변경";
+            */
+            $("h1").text("jQuery로 문자열 변경");
+        }
+
+        function get_li(){
+            /*
+            const li = document.getElementsByTagName("li");
+            const result = document.querySelector("#result");
+
+            for(const idx in li){
+                const str = li[idx].firstChild;
+                result.innerHTML += str.nodeValue + "<br/>";
+            }
+            */
+           $("li").each(function(idx, obj){
+                const str = $(obj).text();
+                $("#result").append(str+"<br/>");
+           });
+        }
+
+    </script>
+</body>
+</html>
