@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery 실습</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(function(){
+        $("p[title ~= aa]").css("color", "red");
+        $("p[title *= aa]").css("background-color", "yellow");
+    });
+</script>
+</head>
+<body>
+    <p title="aaa4">title이 aaa4인 p태그</p>
+    <p title="aaa5">title이 aaa5인 p태그</p>
+    <p title="aa aa6">title이 aa aa6인 p태그</p>
+    <p title="aa">title이 aa인 p태그</p>
+</body>
+</html>
