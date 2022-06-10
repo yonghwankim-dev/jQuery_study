@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery 실습</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(function(){
+        $("#a1").on("click", function(){
+            alert("click");
+
+        });
+
+        $("#a2").one("click", function(){
+            alert("click");
+        });
+
+        $("#a3").on({
+            click : function(){
+                alert("click");
+            },
+            mouseenter : function(){
+                $("#a3").css("background-color", "black");
+            },
+            mouseleave : function(){
+                $("#a3").css("background-color", "white");
+            }
+        });
+    });
+
+    function remove_event(){
+        $("#a1").off("click");
+    }
+</script>
+</head>
+<body>
+    <h3 id="a1">on</h3>
+    <button type="button" onclick="remove_event()">이벤트 제거</button>
+    <hr>
+
+    <h3 id="a2">one</h3>
+
+    <h3 id="a3">event settings</h3>
+</body>
+</html>
