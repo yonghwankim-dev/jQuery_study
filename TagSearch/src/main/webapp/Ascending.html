@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery 실습</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(function(){
+        $("#a4").parent().css("border-color", "red");
+        $("#a4").parents().css("border-width", "4px");
+        $("#a4").parents(".c1").css("border-style", "dotted");
+        $("#a4").parentsUntil(".c1").css("border-style", "dashed");
+    });
+</script>
+<style>
+    div{
+        border: 1px solid black;
+        padding: 10px;
+    }
+</style>
+</head>
+<body>
+    <div>
+        div tag 1
+        <div class="c1">
+            div tag 2
+            <div class="c2">
+                div tag 3
+                <div id="a4">
+                    div tag 4
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
