@@ -21,7 +21,16 @@
 ### Event 처리 및 DOM
 10. [\[jQuery\] jQuery 이벤트 함수](https://yonghwankim-dev.tistory.com/434)
 11. [\[jQuery\] DOM 제어하기](https://yonghwankim-dev.tistory.com/435)
-12. [[jQuery] DOM 추가 삭제](https://yonghwankim-dev.tistory.com/436)
+12. [\[jQuery\] DOM 추가 삭제](https://yonghwankim-dev.tistory.com/436)
+13. [\[jQuery\] CSS 제어](https://yonghwankim-dev.tistory.com/438)
+14. [\[jQuery\] 태그 탐색 1 (parent, child)](https://yonghwankim-dev.tistory.com/439)
+15. [\[jQuery\] 태그 탐색 2 (siblings, next, prev)](https://yonghwankim-dev.tistory.com/440)
+
+### 효과, Ajax
+16. [\[jQuery\] jQuery 효과 (Show/Hide, Fade, Slide, Callback)](https://yonghwankim-dev.tistory.com/441)
+
+
+
 
 ## Reference
 [윤재성의 처음 시작하는 jQuery Programming](https://www.inflearn.com/course/jquery-programming/dashboard)
