@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery 실습</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    function div_hide(){
+        $("#a1").hide("slow", function(){
+            alert("animation end");
+        });
+    }
+</script>
+<style>
+    #a1{
+        border: 1px solid black;
+        background-color: yellow;
+        width: 200px;
+        height: 200px;
+    }
+</style>
+</head>
+<body>
+    <button onclick="div_hide()">hide</button>
+    <div id="a1"></div>
+</body>
+</html>

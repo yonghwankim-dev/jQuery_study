@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery 실습</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    function div_slideUp(){
+        $("#a1").slideUp("slow");
+    }
+    function div_slideDown(){
+        $("#a1").slideDown("slow");
+    }
+    function div_slideToggle(){
+        $("#a1").slideToggle("slow");
+    }
+</script>
+<style>
+    #a1{
+        border: 1px solid black;
+        background-color: yellow;
+        width: 200px;
+        height: 200px;
+    }
+</style>
+</head>
+<body>
+    <button onclick="div_slideUp()">slideUp</button>
+    <button onclick="div_slideDown()">slideDown</button>
+    <button onclick="div_slideToggle()">slideToggle</button>
+    <div id="a1"></div>
+</body>
+</html>
