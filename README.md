@@ -28,6 +28,10 @@
 
 ### 효과, Ajax
 16. [\[jQuery\] jQuery 효과 (Show/Hide, Fade, Slide, Callback)](https://yonghwankim-dev.tistory.com/441)
+17. [\[jQuery\] 애니메이션(Animation)](https://yonghwankim-dev.tistory.com/442)
+18. [\[jQuery\] Ajax(Asynchronous JavaScript and XML)](https://yonghwankim-dev.tistory.com/443)
+
+
 
 
 
